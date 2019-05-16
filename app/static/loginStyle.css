@@ -7,7 +7,7 @@ box-sizing: border-box;
 }
 body {
 font-family: Arial;
-background-color: #3498DB;
+background-color: #dba31d;
 //background-color: #db243d;
 padding: 50px;
 }
@@ -46,13 +46,13 @@ transition: border .5s;
 }
 
 input:focus {
-border: 2px solid #3498DB;
+border: 2px solid #db8504;
 box-shadow: none;
 }
 
 .btn {
   border: 2px solid transparent;
-  background: #3498DB;
+  background: #db6c03;
   //background: #db2d3a;
   color: #ffffff;
   font-size: 16px;
@@ -69,7 +69,7 @@ box-shadow: none;
 }
 
 .btn:hover {
-  background-color: #2980B9;
+  background-color: #d06908;
   //background-color: #b91c28;
 }
 
