@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/static/loginStyle.css" type="text/css">
+{% block body %}
+{% if session['logged_in'] %}
+<p>You're logged in already!</p>
+{% else %}
+
+{#    https://pythonspot.com/en/login-authentication-with-flask/ #}
+
+<form action="" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Application 1</h1>
+			</div>
+
+			<div class="login-form">
+				<div class="control-group">
+				<input type="text" class="login-field" id="username" value="" placeholder="username" name="username">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+
+				<div class="control-group">
+				<input type="password" class="login-field" id="password" value="" placeholder="password" name="password">
+				<label class="login-field-icon fui-lock" for="login-pass"></label>
+				</div>
+
+                <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" >
+			    <br>
+                <div><p>Need an account? Contact zmailloux@solstice.com</p></div>
+			</div>
+		</div>
+	</div>
+</form>
+
+{% endif %}
+{% endblock %}
